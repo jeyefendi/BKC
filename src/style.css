@@ -14,7 +14,7 @@ section {
 }
 
 li {
-  list-style-image: url(/src/dot.svg);
+  list-style-image: url(./img/dot.svg);
   margin-bottom: 8px;
 }
 
@@ -35,31 +35,56 @@ li {
   width: 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   gap: 23px;
 }
 
-.download__forms {
+.download__forms, .upload__forms {
   display: flex;
   gap: 67px;
 }
 
-.download__link {
+.download__link, .upload__link {
   color: #EC1630;
   font-size: 12px;
   width: 85px;
-  height: 30px;
+  cursor: pointer;
+}
+
+.download__link {
   padding-top: 80px;
+  height: 30px;
+}
+
+.upload__link {
+  padding-top: 50px;
+  height: 60px;
 }
 
 .download__pdf1 {
-  background: url(./pdf1.png);
+  background: url(./img/pdf1.png);
 }
 
 .download__pdf2 {
-  background: url(./pdf2.png);
+  background: url(./img/pdf2.png);
+}
+
+.upload__pdf {
+  background: url(./img/upload.png);
+}
+
+.upload__pdf-edit {
+  background: url(./img/edit.png);
+}
+
+.upload__check {
+  display: none;
+}
+
+.upload__check-edit {
+  display: inline;
 }
 
 .pay__price {
@@ -78,6 +103,7 @@ li {
   width: 21.5vw;
   height: 36px;
   line-height: 154%;
+  cursor: pointer;
 }
 
 .section3 {
